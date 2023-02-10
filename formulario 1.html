@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+    <section>
+        <header>Accede a tu Área Clientes</header>
+        <form action="pagina.php">
+        <p id="documento">Elige tu documento
+            <br>
+            <br>
+            <label for="DNI">
+            <input type="radio" name="ID" value="DNI_tarjeta" id="DNI"> DNI o Tarjeta de Residencia
+            </label>
+            <br>
+            <br>
+            <label for="pasaporte">
+            <input type="radio" name="ID" value="Pasaporte" id="pasaporte"> Pasaporte
+            </label>
+        </p>
+        <p id="documento"> Nº de Documento
+            <br>
+            <input type="text" id="texto_documento" placeholder="DNI o Tarjeta de Residencia">
+        </p>
+        <br>
+        <p id="documento"> Fecha de Nacimiento
+            <br>
+            <input type="date" value="fecha_nacimiento" id="texto_documento">
+        </p>
+        <br>
+        <label>
+            <input type="checkbox" value="recordar"><span id="documento">Recordar</span>
+        </label>
+        <br>
+        <br>
+        <input type="submit" value="Entrar" id="enviar">
+        
+        </form>
+    </section>
+
+    <hr>
+    <hr>
+</body>
+</html>

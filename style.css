@@ -1,7 +1,41 @@
-input#entrar{
-    background-color: rgb(255, 153, 0);
-    color: white;
-    width: 140px;
-    height: 30px;
-    font-size: large;
-}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+ 
+ header{
+     font-size: 30px;
+ }
+ 
+ section{
+     margin-left: 40%;
+ }
+ 
+ #documento{
+     font-size: 20px;
+ }
+ 
+ input {
+     border-radius: 12px;
+     border-radius: 12px;
+     border: 1px solid grey;
+     padding: 0 4px 0 4px;
+ }
+ 
+ input#texto_documento{
+     width: 400px;
+     height: 38px;
+     font-size: 17px;
+ }
+ 
+ input#texto{
+     font-size: 20px;
+ }
+ 
+ input#enviar{
+     background-color: rgb(255, 102, 0);
+     color: white;
+     width: 405px;
+     height: 50px;
+     font-size: 17px;
+     border-color: white;
+ }

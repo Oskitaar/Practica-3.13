@@ -4,54 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Práctica 13: Formularios</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<form action="recogedatos.php">
-
-    <p>
-    <h2>Accede a tu Área Clientes</h2>
-    <h4>Elige tu documento</h4>
-    </p>
-    <label for="dni">
-    <p>
-    <input type="radio" name="ID" value="dni" id="dni">DNI o Tarjeta de residencia
-    </p>
-    </label>
-    <label for="pasaporte">
-    </p>
-    <input type="radio" name="ID" value="pasaporte" id="pasaporte">Pasaporte
-    </p>
-    </label>
-
-    <p>
-        Número de documento
-    </p>
-    <p>
-        <input type="text" name="numero_documento">
-    </p>
-
-    <p>
-        Fecha de nacimiento
-    </p>
-    <p>
-        <input type="date" name="fecha_nacimiento">
-    </p>
-
-    <label for="recordar">
-    <p>
-        <input type="radio" name="recordar" id="recordar">Recordar
-    </p>
-    </label>
-    <p>
-        <input type="submit" value="Entrar" id="entrar">
-    </p>
-
-
-
-
-
-    </form>
+    <section>
+        <header>Accede a tu Área Clientes</header>
+        <form action="pagina.php">
+        <p id="documento">Elige tu documento
+            <br>
+            <br>
+            <label for="DNI">
+            <input type="radio" name="ID" value="DNI_tarjeta" id="DNI"> DNI o Tarjeta de Residencia
+            </label>
+            <br>
+            <br>
+            <label for="pasaporte">
+            <input type="radio" name="ID" value="Pasaporte" id="pasaporte"> Pasaporte
+            </label>
+        </p>
+        <p id="documento"> Nº de Documento
+            <br>
+            <input type="text" id="texto_documento" placeholder="DNI o Tarjeta de Residencia">
+        </p>
+        <br>
+        <p id="documento"> Fecha de Nacimiento
+            <br>
+            <input type="date" value="fecha_nacimiento" id="texto_documento">
+        </p>
+        <br>
+        <label>
+            <input type="checkbox" value="recordar"><span id="documento">Recordar</span>
+        </label>
+        <br>
+        <br>
+        <input type="submit" value="Entrar" id="enviar">
+        
+        </form>
+    </section>
 </body>
 </html>
